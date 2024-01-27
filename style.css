@@ -1,0 +1,225 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --btn-hover: hsla(245, 75%, 52%, 70%);
+}
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+/* General Styling */
+
+body {
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-img {
+  width: 100%;
+}
+
+.summary-card {
+  border-radius: 1.25rem;
+  background-color: white;
+  overflow: hidden;
+  max-width: 35rem;
+  height: 0 auto;
+  margin: 4rem 1.5rem;
+}
+
+.summary-content h2,
+.summary-content p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.summary-content {
+  padding: 1.5rem;
+  place-content: center;
+}
+
+.summary-intro p {
+  padding: 0 1.2rem;
+  color: var(--desaturated-blue);
+}
+
+.summary-content h2 {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--very-pale-blue);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.annual-price-info {
+  display: flex;
+  align-items: center;
+}
+
+.annual-price-info img {
+  margin-right: 1rem;
+}
+
+.price {
+  align-items: center;
+}
+
+.price span {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.price h3 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 1rem;
+  text-wrap: nowrap;
+}
+
+.price-info a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.price-info a:hover {
+  text-decoration: none;
+  color: var(--btn-hover);
+}
+
+.checkout-btn {
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--bright-blue);
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.order-cancel-btn {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  border: none;
+  font-weight: 700;
+  margin: 1.5rem 0 auto;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.order-cancel-btn:hover {
+  color: var(--dark-blue);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-height: 100dvh;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  main {
+    align-items: center;
+    justify-content: center;
+    margin: 6rem;
+  }
+
+  .summary-card {
+    max-width: 28rem;
+    margin: 4rem 2rem;
+  }
+
+  .summary-content {
+    padding: 3rem;
+  }
+}
