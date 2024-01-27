@@ -24,7 +24,12 @@ Users should be able to:
 
 ### Mobile Version
 
+![iPhone SE-1706355932529](https://github.com/santanavanessa/order-summary-component/assets/48105425/240c3676-203d-4630-af9b-e1c29367838a)
+
 ### Desktop Version
+
+![Desktop Device-1706355587525](https://github.com/santanavanessa/order-summary-component/assets/48105425/80955d7e-d50f-4286-ac42-384bbc353fda)
+
 
 ## Links
 
